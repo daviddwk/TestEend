@@ -1,7 +1,7 @@
 #pragma once
 
-#include <eendgine/collisionGeometry.hpp>
-#include <eendgine/entityBatches.hpp>
+#include <Eendgine/collisionGeometry.hpp>
+#include <Eendgine/entityBatches.hpp>
 
 #include <filesystem>
 

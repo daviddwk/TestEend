@@ -1,10 +1,10 @@
 #pragma once
 
-#include <eendgine/sprite.hpp>
-#include <eendgine/camera.hpp>
-#include <eendgine/textureCache.hpp>
-#include <eendgine/collisionGeometry.hpp>
-#include <eendgine/entityBatches.hpp>
+#include <Eendgine/sprite.hpp>
+#include <Eendgine/camera.hpp>
+#include <Eendgine/textureCache.hpp>
+#include <Eendgine/collisionGeometry.hpp>
+#include <Eendgine/entityBatches.hpp>
 
 
 namespace Eend = Eendgine;

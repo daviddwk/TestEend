@@ -36,5 +36,5 @@ build/*
 lib/glad/glad.h
 lib/glad/glad.c
 lib/stb/stb_image.h
-lib/eendgine
+#lib/Eendgine
 compile_flags.txt

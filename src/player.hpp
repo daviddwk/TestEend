@@ -1,9 +1,9 @@
 #pragma once
 
-#include <eendgine/model.hpp>
-#include <eendgine/collisionGeometry.hpp>
-#include <eendgine/camera.hpp>
-#include <eendgine/entityBatches.hpp>
+#include <Eendgine/model.hpp>
+#include <Eendgine/collisionGeometry.hpp>
+#include <Eendgine/camera.hpp>
+#include <Eendgine/entityBatches.hpp>
 
 namespace Eend = Eendgine;
 

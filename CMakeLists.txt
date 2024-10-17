@@ -14,7 +14,7 @@ include_directories("lib")
 
 add_subdirectory(lib/glad)
 add_subdirectory(lib/stb)
-add_subdirectory(lib/eendgine)
+add_subdirectory(lib/Eendgine)
 
 
 file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "src/*.cpp")
@@ -26,5 +26,5 @@ set_target_properties(
         SUFFIX ".out"
         RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}"
 )
-target_link_libraries(game eendgine SDL2 assimp stb glad)
+target_link_libraries(game Eendgine SDL2 assimp stb glad)
 target_compile_options(game PRIVATE -Wall)

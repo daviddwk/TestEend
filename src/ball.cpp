@@ -1,7 +1,7 @@
 #include "ball.hpp"
 
-#include <eendgine/random.hpp>
-#include <eendgine/textureCache.hpp>
+#include <Eendgine/random.hpp>
+#include <Eendgine/textureCache.hpp>
 
 #include <random>
 #include <numbers>

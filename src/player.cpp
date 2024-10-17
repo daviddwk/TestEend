@@ -1,5 +1,5 @@
 #include "player.hpp"
-#include <eendgine/inputManager.hpp>
+#include <Eendgine/inputManager.hpp>
 // DEBUG
 #include <chrono>
 namespace Eend = Eendgine;

@@ -1,17 +1,17 @@
-#include <eendgine/window.hpp>
-#include <eendgine/shader.hpp>
-#include <eendgine/sprite.hpp>
-#include <eendgine/textureCache.hpp>
-#include <eendgine/camera.hpp>
-#include <eendgine/frameLimiter.hpp>
-#include <eendgine/inputManager.hpp>
-#include <eendgine/model.hpp>
-#include <eendgine/collisionGeometry.hpp>
-#include <eendgine/screen.hpp>
-#include <eendgine/entityBatch.hpp>
-#include <eendgine/entityBatches.hpp>
-#include <eendgine/shaders.hpp>
-#include <eendgine/info.hpp>
+#include <Eendgine/window.hpp>
+#include <Eendgine/shader.hpp>
+#include <Eendgine/sprite.hpp>
+#include <Eendgine/textureCache.hpp>
+#include <Eendgine/camera.hpp>
+#include <Eendgine/frameLimiter.hpp>
+#include <Eendgine/inputManager.hpp>
+#include <Eendgine/model.hpp>
+#include <Eendgine/collisionGeometry.hpp>
+#include <Eendgine/screen.hpp>
+#include <Eendgine/entityBatch.hpp>
+#include <Eendgine/entityBatches.hpp>
+#include <Eendgine/shaders.hpp>
+#include <Eendgine/info.hpp>
 
 #include <stb/stb_image.h>
 
