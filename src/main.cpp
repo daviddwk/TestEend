@@ -12,6 +12,7 @@
 #include <Eendgine/entityBatches.hpp>
 #include <Eendgine/shaders.hpp>
 #include <Eendgine/info.hpp>
+#include <Eendgine/text.hpp>
 
 #include <stb/stb_image.h>
 
@@ -38,6 +39,7 @@ int main(){
     Eend::Info::registerTime("ball time", 0);
     Eend::Info::registerTime("draw time", 0);
     Eend::Info::registerTime("render time", 0);
+    Eend::Info::registerInt("test id", 0);
     //
     
     Eend::Window::init(screenWidth, screenHeight, "Quack"); 
@@ -73,7 +75,18 @@ int main(){
             5.0f, 5.0f, 4.0f,
             10.0f, 10.0f);
 
-    Ball ball("resources/ost/diffuse_noeyes.png", glm::vec3(0.0f, 10.0f, 0.0f), 10.0f);
+    //Ball ball("resources/ost/diffuse_noeyes.png", glm::vec3(0.0f, 10.0f, 0.0f), 10.0f);
+    /*
+    auto testPanelId = Eend::Entities::PanelBatch::insert({"resources/ost/diffuse_noeyes.png"});
+    auto testPanelIdd = Eend::Entities::PanelBatch::insert({"resources/ost/diffuse_noeyes.png"});
+    Eend::Info::updateInt("test id", testPanelId);
+    Eend::Sprite& testPanelRef = Eend::Entities::PanelBatch::getRef(testPanelId);
+    Eend::Sprite& testPanelReff = Eend::Entities::PanelBatch::getRef(testPanelIdd);
+    testPanelRef.setScale(100, 100);
+    testPanelReff.setScale(100, 100);
+    testPanelReff.setPosition(glm::vec3(20.0f));
+    */
+    Eend::Text text("test", 100, "aABC");
 
     while(!Eend::InputManager::shouldClose){
         Eend::FrameLimiter::startInterval(); 
@@ -89,9 +102,11 @@ int main(){
         Eend::Info::startTime("strike time");
         glm::vec3 debugPlayerStrike = player.getStrikeCollision().getPosition();
         glm::vec3 debugBallStrike = player.getPosition();
+        /*
         if (player.getStrike() && Eend::colliding(player.getStrikeCollision(), ball.getCollision(), nullptr)) {
             ball.hit();
         }
+        */
         Eend::Info::stopTime("strike time");
 
         Eend::Info::startTime("player time");
@@ -99,7 +114,7 @@ int main(){
         Eend::Info::stopTime("player time");
         
         Eend::Info::startTime("ball time");
-        ball.update(dt);
+        //ball.update(dt);
         Eend::Info::stopTime("ball time");
         
         Eend::Info::startTime("court time");
